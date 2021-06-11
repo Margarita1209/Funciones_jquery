@@ -1,0 +1,132 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My jQuery Basic Assignment!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        $(document).ready(function() {
+
+            $('#boton1').click(function() {
+                $(this).hide();
+            });
+            $('#coding-dojo').click(function() {
+                $(this).slideToggle();
+            });
+            $('#boton3').click(function() {
+                $("#insertarcontenido").append("<h3>soy el nuevo Contenido </h3>");
+            });
+
+            $('#boton4').click(function() {
+                $("#boton1, #coding-dojo").show();
+            });
+
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container-lg">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Una Accion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Otra accion</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">opciones
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-4 align-self-center"><button type="button" id="boton1" class="btn-lg btn-dark">Ocultame</button></div>
+            <div class="col-4">
+                <h1>Oculta Boton</h1>
+                <p>Haz Click en el boton para ocultarlo</p>
+            </div>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-4 align-self-center"><img id="coding-dojo" src="Coding_dojo.png" alt="" width="100" height="50"></div>
+            <div class="col-4">
+                <h1>Oculta Imagen</h1>
+                <p>Haz Click en la imagen para ocultarla girando</p>
+            </div>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-4 align-self-center"><button type="button" id="boton3" class="btn-lg btn-dark">Inserta contenido</button></div>
+            <div id="insertarcontenido" class="col-4">
+                <h1>Inserta nuevo contenido</h1>
+                <p>Haz Click en el boton para agregar nuevo contenido a continuacion </p>
+            </div>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-4 align-self-center"><button type="button" id="boton4" class="btn-lg btn-dark">Mostrar ocultos </button></div>
+
+            <div class="col-4">
+                <h1>Mostrar</h1>
+                <p>Haz Click en el boton para mostrar el primer boton y la imagen que ocultaste previamente</p>
+            </div>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-4 align-self-center"><button type="button" id="boton5" class="btn-lg btn-dark">click acá</button></div>
+            <div class="col-4">
+                <h1>funcion</h1>
+                <p>Haz Click en el boton para ----</p>
+            </div>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-4 align-self-center"><button type="button" id="boton6" class="btn-lg btn-dark">click acá</button></div>
+            <div class="col-4">
+                <h1>funcion</h1>
+                <p>Haz Click en el boton para -----</p>
+            </div>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-4 align-self-center"><button type="button" id="boton7" class="btn-lg btn-dark">click acá</button></div>
+            <div class="col-4">
+                <h1>funcion</h1>
+                <p>Haz Click en el boton para -----</p>
+            </div>
+            <hr>
+        </div>
+
+</body>
+</html>
